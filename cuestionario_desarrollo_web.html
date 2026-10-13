@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuestionario de Desarrollo Web</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body class="tema-rosa">
+    <main role="main">
+        <h1>Cuestionario de Desarrollo Web</h1>
+        <p>Este documento presenta conceptos clave del desarrollo web y ejemplos de etiquetas HTML.</p>
+
+        <article id="frontend-backend">
+            <h2>Frontend y Backend</h2>
+            <p><strong>Frontend:</strong> Hace referencia a la interfaz de usuario y la experiencia visual. Es lo que corre directamente en el navegador del cliente.</p>
+            <p><strong>Backend:</strong> Corresponde a la infraestructura del servidor. Procesa peticiones, administra bases de datos y gestiona la lógica de negocio.</p>
+        </article>
+
+        <article id="html5">
+            <h2>¿Qué es HTML5?</h2>
+            <p>HTML5 define la estructura base de los sitios web mediante etiquetas. También permite incorporar contenido multimedia y elementos semánticos.</p>
+            <p>Ejemplo de etiquetas semánticas: <mark>&lt;main&gt;</mark>, <mark>&lt;article&gt;</mark> y <mark>&lt;aside&gt;</mark>.</p>
+        </article>
+
+        <article id="tecnologias">
+            <h2>Tecnologías esenciales en Frontend</h2>
+            <p><strong>HTML5:</strong> define la estructura.</p>
+            <p><strong>CSS3:</strong> aporta estilos, colores y diseño adaptable.</p>
+            <p><strong>JavaScript:</strong> añade dinamismo e interactividad.</p>
+            <p><strong>Vue.js / React:</strong> permiten construir interfaces por componentes.</p>
+            <p><strong>Tailwind CSS / Sass:</strong> facilitan la creación de estilos.</p>
+        </article>
+
+        <article id="etiquetas">
+            <h2>Ejemplos de etiquetas HTML del cuestionario</h2>
+
+            <h3>Estructura básica</h3>
+            <p><strong>&lt;!DOCTYPE html&gt;</strong> declara el tipo de documento HTML5.</p>
+            <p><strong>&lt;html lang="es" dir="ltr"&gt;</strong> contiene el documento.</p>
+            <p><strong>&lt;head&gt;</strong> contiene metadatos y enlaces a recursos.</p>
+            <p><strong>&lt;title&gt;</strong> establece el título de la pestaña del navegador.</p>
+            <p><strong>&lt;meta&gt;</strong> define metadatos, como la codificación y el viewport.</p>
+            <p><strong>&lt;link&gt;</strong> vincula recursos externos, como una hoja de estilos.</p>
+            <p><strong>&lt;body&gt;</strong> contiene el contenido visible de la página.</p>
+
+            <hr>
+
+            <h3>Contenido semántico y texto</h3>
+            <p><strong>&lt;main&gt;</strong> identifica el contenido principal.</p>
+            <p><strong>&lt;article&gt;</strong> representa contenido independiente, como una noticia.</p>
+            <p><strong>&lt;aside&gt;</strong> contiene información secundaria o relacionada.</p>
+            <p><strong>&lt;h1&gt;, &lt;h2&gt; y &lt;h3&gt;</strong> representan encabezados de distintos niveles.</p>
+            <p><strong>&lt;p&gt;</strong> crea un párrafo.</p>
+            <p><strong>&lt;mark&gt;</strong> resalta texto.</p>
+            <p><strong>&lt;strong&gt;</strong> indica importancia; normalmente se muestra en negrita.</p>
+            <p><strong>&lt;em&gt;</strong> aplica énfasis; normalmente se muestra en cursiva.</p>
+            <p><strong>&lt;hr&gt;</strong> crea una separación temática.</p>
+            <p>Línea 1<br>Línea 2: el elemento <strong>&lt;br&gt;</strong> inserta un salto de línea.</p>
+
+            <hr>
+
+            <h3>Formulario de ejemplo</h3>
+            <form action="#" method="get">
+                <label for="pais">Selecciona tu país:</label>
+                <select name="pais" id="pais" required>
+                    <option value="">-- Selecciona una opción --</option>
+                    <option value="1" selected>Colombia</option>
+                    <option value="2">México</option>
+                    <option value="3">Argentina</option>
+                </select>
+
+                <p>
+                    <label for="mensaje">Escribe un comentario:</label>
+                    <textarea id="mensaje" name="mensaje" rows="4" cols="35" placeholder="Escribe tu mensaje..."></textarea>
+                </p>
+
+                <label for="progreso">Progreso de la actividad:</label>
+                <progress id="progreso" value="70" max="100">70%</progress>
+            </form>
+        </article>
+
+        <aside>
+            <h3>Nota</h3>
+            <p>Este archivo reúne ejemplos de las etiquetas HTML incluidas en el cuestionario. El archivo <em>estilos.css</em> es opcional; si no existe, la página funcionará con los estilos predeterminados del navegador.</p>
+        </aside>
+    </main>
+</body>
+</html>
